@@ -14,10 +14,9 @@
 .header img{
     position: absolute;
     float: left;
-    left: 0;
+    left: 10px;
     width: 150px;
     height: 117px;
-    border: 1px solid #FFEEAA;
 }
 
 /*----------MENU----------*/
@@ -55,9 +54,9 @@
 .menu ul li{
     float: left;
     padding: 10px;
-    font-size: 1em;
+    font-size: 1.3em;
     font-weight: bolder;
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'xilosa';
     
 }
 /*-----submenu----*/
@@ -174,7 +173,7 @@
 }
 /*---- Elementos -----*/
 h1{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'xilosa';
     padding-bottom: 20px;
     font-size: 1.5em;
 }
