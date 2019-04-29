@@ -155,10 +155,23 @@
     border-bottom: 2px #1F1202 solid; 
     padding: 20px;  
 }*/
+.paletaCores{
+    height: 550px;
+}
+.paletaCores img, .paletaCores .texto-logo{
+    display: inline-block;
+}
 .paletaCores img{
     float: left;
     border-radius: 20%;
     width: 250px;
+    height: 500px;
+}
+.paletaCores .texto-logo{
+    margin-top: 30px;
+}
+.paletaCores .texto-logo p{
+    text-align: justify;
 }
 /*---- class .botoesAcao----*/
 .funcionalidades{
