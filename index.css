@@ -94,7 +94,7 @@
 
 /*---- class .logomarca----*/
 .logomarca, .tipografia, .iconografia, .paletaCores, .funcionalidades{
-    height: 400px;
+    height: 350px;
     border-bottom: 3px #1F1202 solid; 
     padding: 20px;
 }
@@ -125,7 +125,7 @@
 }
 .tipografia .texto p{
     text-align: justify;
-    margin-bottom: 20%;
+    margin-bottom: 10%;
     top: auto;
 }
 /*---- class .iconografia----*/
@@ -144,6 +144,10 @@
 .iconografia #icones{
     background-color: #1F1202;
     height: 100px;
+}
+.iconografia p{
+    text-align: justify;
+    margin-left: -50px;
 }
 /*---- class .paletaCores----*/
 /*.paletaCores{
