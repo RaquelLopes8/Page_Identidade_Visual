@@ -1,221 +1,123 @@
-*{
-    padding: 0;
+* {
     margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/*----------CABEÇALHO----------*/
-.header{
-    width: 100%;
-    height: 127px; 
-    background-color: #1F1202;
-    border-top: 2px #FFEEAA solid;
-    border-bottom: 2px #FFEEAA solid;
-}
-.header img{
-    position: absolute;
-    float: left;
-    left: 10;
-    width: 150px;
-    height: 117px;
+.container {
+    display: flex;
+    justify-content: center;
 }
 
-/*----------MENU----------*/
-.menu{
-    width: 88%;
-    border-top: 2px solid #FFEEAA;
-    position: absolute;
-    top: 13%;
-    left: 11.5%;
-}
-.menu li{
-    position: relative;
-    float: left;
-}
-.menu ul{
-    list-style: none;
-    
-}
-.menu ul li a{
-    margin: 40px;
-    padding: 10px;
-    text-decoration: none;
-    color: white;
-}
-.menu ul li a:hover{
-    color: #1F1202;
+.conteudo {
+    padding: 50px;
+    width: 60%;
 }
 
-.menu ul li:hover{
-    background-color: #FFEEAA;
-    color: #1F1202;
-}
-.menu ul li{
-    float: left;
-    padding: 10px;
-    font-size: 1em;
-    font-weight: bolder;
-    font-family: 'Open Sans Condensed', sans-serif;
-    
-}
-/*-----submenu----*/
-
-.menu ul li ul{
-    position:absolute; 
-    top:30px; 
-    left:0;
-    background-color:#fff; 
-    display:none; 
+.blocoTopico {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 100px;
+    align-items: center;
 }
 
-.menu ul li:hover ul{
-    display: block;
-}
-.menu ul li ul li{
-    background-color: #1F1202;
-    display:block; 
-    width:130px;
-    font-size: 0.8em;
-    min-width: 350px;
-    z-index: 1000;
-    text-align: left;
+.blocoTopico .tituloTopico {
+    font-size: 40px;
+    margin: 20px;
 }
 
-
-/*----------CONTENT----------*/
-.main{
-    width: 80%;
-    height: 100%;
-    margin-left: 10%;
-    margin-right: 10%;
-    /*padding: 10px;*/
-    background-color: #FFEEAA;
-
+.imagemTopico img {
+    margin-right: 20px;
 }
 
-/*---- class .logomarca----*/
-.logomarca, .tipografia, .iconografia, .paletaCores, .funcionalidades{
-    height: 350px;
-    border-bottom: 3px #1F1202 solid; 
+.imagemTopico {
+    display: flex;
+    justify-content: center;
     padding: 20px;
 }
-.logomarca img{
-    /*float: left;*/
-    border-radius: 20%;
-    width: 250px;
+
+.barra-logo {
+    width: 100%;
+    border-bottom: 2px solid;
+    border-color: rgb(184, 184, 184);
+    margin-bottom: 20px;
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 7px;
 }
-.logomarca img, .logomarca .texto-logo{
-    display: inline-block;
+
+.barra-logo img {
+    width: 100px;
+    height: 50px;
 }
-.logomarca .texto-logo p{
-    text-align: justify;
-    top: auto;
+
+.barra-logo h1 {
+    margin-top: 15px;
 }
-/*---- class .tipografia----*/
-/*.tipografia{
-    height: 300px;
-    border-bottom: 4px #1F1202 solid;  
-    padding: 20px;  
-}*/
-.tipografia img{
-    width: 250px;
+
+.menu {
+    width: 20%;
+    height: 100%;
 }
-.tipografia img, .tipografia .texto{
-    display: inline-block;
+
+.bloco-menu ul {
+    list-style: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+
+.bloco-menu ul li {
     padding: 10px;
 }
-.tipografia .texto p{
-    text-align: justify;
-    margin-bottom: 10%;
-    top: auto;
+
+.bloco-menu ul li:hover {
+    background-color: rgb(31, 18, 2);
+    cursor: pointer;
+    color: rgb(255, 238, 170)
 }
-/*---- class .iconografia----*/
-/*.iconografia{
-    height: 1200px;
-    border-bottom: 2px #1F1202 solid; 
-    padding: 20px;  
-}*/
-.iconografia img{
-    display: inline-block;
-    border-radius: 20%;
-    width: 90px;
-    height: 90px;
-    padding: 5px;
-}
-.iconografia #icones{
-    background-color: #1F1202;
-    height: 100px;
-}
-.iconografia p{
-    text-align: justify;
-    margin-left: -50px;
-}
-/*---- class .paletaCores----*/
-/*.paletaCores{
-    height: 300px;
-    border-bottom: 2px #1F1202 solid; 
-    padding: 20px;  
-}*/
-.paletaCores{
-    height: 550px;
-}
-.paletaCores img, .paletaCores .texto-logo{
-    display: inline-block;
-}
-.paletaCores img{
-    float: left;
-    border-radius: 20%;
-    width: 250px;
-    height: 500px;
-}
-.paletaCores .texto-logo{
-    margin-top: 30px;
-}
-.paletaCores .texto-logo p{
-    text-align: justify;
-}
-/*---- class .botoesAcao----*/
-.funcionalidades{
-    height: 3500px; 
-}
-.funcionalidades img{
-    float: left;
-    border-radius: 20%;
-    width: 250px;
-}
-.funcionalidades #botoes,#forms,#caixasDialogo,
-#navegacao,#linksElem,#ferramBusca,#tabelas,
-#galeriaImagens,#carrosseis,#redesSociais{
-    width: 960px;  
-    padding: 20px;  
-}
-/*---- Elementos -----*/
-h1{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding-bottom: 20px;
-    font-size: 1.5em;
-}
-h2{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding-top: 50px;
-    padding-bottom: 20px;
-    font-size: 1em;
-}
-p {
-    overflow: auto;
-    padding: 5px;
-    line-height: 20px;
-    position: relative;
-    left: 5%;
-    top: 50px;
-    width: 650px;
-    height: 150px;
-    text-align: left ;
-    font-family:  "Open Sans Condensed", "Arial", sans-serif;
-}
-a{
-    text-decoration-style: none;
-    list-style-type: none;
-    text-decoration-line: none;
+
+a {
+    text-decoration: none;
     color: black;
 }
 
+#topico1 {
+    transition: bottom .2s ease-in-out;
+}
+
+.botao-pri {
+    background-color: rgb(255, 238, 170);
+    border-radius: 5px;
+    padding: 10px;
+    color: black;
+    width: 70px;
+}
+
+.botao-pri:hover {
+    background-color: rgb(224, 209, 149);
+    cursor: pointer;
+    color: rgb(31, 18, 2)
+}
+
+.botao-sec {
+    background-color: rgb(31, 18, 2);
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    width: 90px;
+}
+
+.botao-sec:hover {
+    background-color: rgb(24, 14, 2);
+    cursor: pointer;
+    color: rgb(255, 238, 170);
+}
+
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.textoTopico p {
+    padding: 20px;
+}
