@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/compilados/bootstrap.css">
+
+    <link rel="stylesheet" href="node_modules/bootstrap/compilados/style.css">
+</head>
+<body>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:rgb(31, 18, 2); color:rgb(224, 209, 149);">
+                <a class="navbar-brand" href="#"><img src="./imagens/logo.png" alt="" height="60px" width="120px" ></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Início <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Quem somos?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Redes sociais</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Comes e bebes
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Bolos</a>
+                        <a class="dropdown-item" href="#">Bebidas</a>
+                        <a class="dropdown-item" href="#">Doces</a>
+                        <a class="dropdown-item" href="#">Salgados</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Decoração
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Ambientes</a>
+                            <a class="dropdown-item" href="#">Artesanato</a>
+                            <a class="dropdown-item" href="#">Mesas</a>
+                            <a class="dropdown-item" href="#">Papelaria</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Pesquisa..." aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="background-color: rgb(224, 209, 149); color:rgb(31, 18, 2);">Pesquisar</button>
+                  </form>
+                </div>
+        </nav>
+
+        <h3>Links, Elementos de Navegação e Ferramenta de busca</h3>
+
+        <div style="padding:40px;">
+            <h3>Caixas de dialogos e Notificação</h3>
+            <p>Clique no botão: "Cadastrar"</p>
+            <input type="text">
+            <button type="submit" data-toggle="modal" data-target="#pageModal" style="background-color: rgb(224, 209, 149); color:rgb(31, 18, 2);">Cadastrar</button>
+        </div>
+        <!--Modal-->
+        <div class="modal fade" id="pageModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content" style="background-color: rgb(224, 209, 149); color:rgb(31, 18, 2);">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Notificação</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <p>Cadastro concluído!!</p>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal" style="background-color:rgb(31, 18, 2); color: rgb(224, 209, 149);">Ok</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/popper.js/dist/popper.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+</html>

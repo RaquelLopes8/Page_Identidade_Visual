@@ -1,0 +1,25 @@
+{
+  "name": "page_identidade_visual",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RaquelLopes8/Page_Identidade_Visual.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RaquelLopes8/Page_Identidade_Visual/issues"
+  },
+  "homepage": "https://github.com/RaquelLopes8/Page_Identidade_Visual#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "npm": "^6.9.0",
+    "popper.js": "^1.15.0"
+  }
+}
